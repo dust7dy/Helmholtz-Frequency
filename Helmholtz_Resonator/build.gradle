@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'   // Optional: only if you want to run your program via `gradle run`
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17   // or 8, 11, 21…
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+application {
+    // Only needed if using the application plugin
+    mainClass = 'java.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
